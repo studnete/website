@@ -1,6 +1,7 @@
-<iframe src="http://www.studnet.info/Logon.aspx?ReturnUrl=%2fDefault.aspx" style="width:100%;height:100%;"></iframe>
+<iframe id="view" src="http://www.studnet.info/Logon.aspx?ReturnUrl=%2fDefault.aspx" style="width:100%;height:100%;"></iframe>
 
 <script>
-  
-  alert(document.getElementById('iframeID').contentWindow.document.body.innerHTML);
+  document.getElementById("view").onload = function(){
+    alert(document.getElementById("view").contentWindow.document.body.innerHTML);
+  }
 </script>
