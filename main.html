@@ -2,6 +2,10 @@
 
 <script>
   document.getElementById("view").onload = function(){
-    alert(document.getElementById("view").parentNode.innerHTML);
+    
+    var iframe = document.getElementById('iframeId');
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    
+    alert(innerDoc.innerHTML);
   }
 </script>
